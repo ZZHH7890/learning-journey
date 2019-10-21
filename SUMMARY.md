@@ -1,10 +1,3 @@
-<!--
- * @Author: joker.zhang
- * @Date: 2019-10-18 11:52:50
- * @LastEditors: joker.zhang
- * @LastEditTime: 2019-10-21 13:51:11
- * @Description: For Automation
- -->
 # Summary
 
 * [前言](README.md)
