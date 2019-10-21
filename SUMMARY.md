@@ -3,6 +3,8 @@
 * [前言](README.md)
 * [Python](python/README.md)
 * [GitBook](GitBook/README.md)
+    * [安装配置](GitBook/安装配置.md)
+    * [常用命令](GitBook/常用命令.md)
 * [VSCode](VSCode/README.md)
     * [常用快键键](VSCODE/常用快键键.md)
     * [注释颜色](VSCODE/注释颜色.md)
