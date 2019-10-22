@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* [Python](python/README.md)
+* [Python](Python/README.md)
 * [GitBook](GitBook/README.md)
     * [安装配置](GitBook/安装配置.md)
     * [常用命令](GitBook/常用命令.md)
@@ -10,4 +10,8 @@
     * [注释颜色](VSCODE/注释颜色.md)
 * [Git](Git/README.md)
     * [常用命令](Git/常用命令.md)
+* [Selenium](Selenium/README.md)
+    * [安装配置](Selenium/安装配置.md)
+    * [常用API](Selenium/常用API.md)
+    * [Issues](Selenium/Issues.md)
 
