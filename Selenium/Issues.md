@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2019-10-22 16:47:49
  * @LastEditors: joker.zhang
- * @LastEditTime: 2019-10-22 16:58:27
+ * @LastEditTime: 2019-10-22 17:15:09
  * @Description: For Automation
  -->
 # Issues
@@ -48,7 +48,7 @@ option.add_argument('disable-infobars')disable-infobars
 ```
 
 
-**解决方法二**将disable-infobars不生效了，百度不行找谷歌搜索 直接添加到webdriver的chrome中：python\Lib\site-packages\selenium\webdriver\chrome\options.py
+**解决方法二**直接添加到webdriver的chrome中：python\Lib\site-packages\selenium\webdriver\chrome\options.py
 
 ```
 class Options(object):
@@ -72,4 +72,15 @@ https://help.applitools.com/hc/en-us/articles/360007189411--Chrome-is-being-cont
 option = webdriver.ChromeOptions()
 option.add_experimental_option('excludeSwitches',['enable-automation'])
 #option.add_argument('disable-infobars')
+```
+
+**3.selenium跑页面时，经常会遇到localstorage类型的弹窗**
+
+**解决：**
+selenium没有直接处理localstorage的api, 所以需要通过js来预先设置好需要的localstorage的key和value，需要注意的是设置localstorage要在打开页面之前
+
+```
+self.input_url("https://*/global-v2/favicon.ico") #先随便设置localstorage所在域
+js_h = 'localStorage.setItem("v6_gdpr", true);'
+self.excecute_js(js_h)
 ```
