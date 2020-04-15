@@ -2,9 +2,12 @@
 
 * [前言](README.md)
 * [Python](Python/README.md)
+* [Django](Django/README.md)
+    * [常用命令](Django/常用命令.md)
 * [GitBook](GitBook/README.md)
     * [安装配置](GitBook/安装配置.md)
     * [常用命令](GitBook/常用命令.md)
+    * [GitBook与GitHub关联](GitBook/GitBook与GitHub关联.md)
 * [VSCode](VSCode/README.md)
     * [常用快键键](VSCODE/常用快键键.md)
     * [注释颜色](VSCODE/注释颜色.md)
