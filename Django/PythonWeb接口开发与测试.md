@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-04-16 15:49:59
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-04-16 16:47:33
+ * @LastEditTime: 2020-04-16 17:47:56
  * @Description: For Automation
  -->
 
@@ -22,4 +22,12 @@ MVC模式是把数据存取逻辑、 业务逻辑和表现逻辑组合在一起�
 * V代表视图（View） ， 即业务逻辑层。 该层包含存取模型及调取恰当模板的相关逻辑。 你可以把它看作模型与模板之间的桥梁作模型与模板之间的桥梁作模型与模板之间的桥梁
 
 # Django流程
- ![django流程](..\images\django流程.png)
+```
+mermaid
+graph LR
+A[方形] -->B(圆角)
+    B --> C{条件a}
+    C -->|a=1| D[结果1]
+    C -->|a=2| E[结果2]
+    F[横向流程图]
+```
