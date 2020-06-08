@@ -1,0 +1,39 @@
+.gitbook-link {    
+  display: none !important;
+}
+.page-inner {   
+  max-width: 90% !important;
+}
+.book .book-summary .book-logo {    
+  text-align: left !important;    
+  padding: 0px 0px !important;    
+  display: block !important;
+}
+.tg td{
+	border:#FFFFFF 1px solid;
+	height:20px; 
+}
+.tg th{
+	background-color:#FF8C94;
+}
+.tg .tg-0t{
+	background-color:#C199DB;
+}
+.tg .tg-1t{
+	background-color:#9EA8DB;
+}
+.tg .tg-2t{
+	background-color:#A3CFDB;
+}
+.tg .tg-3t{
+	background-color:#99d6db;
+}
+.tg .tg-4t{
+	background-color:#9fdb99;
+}
+.tg .tg-5t{
+	background-color:#d8db99;
+}
+.tg .tg-6t{
+	background-color:#dbbf99;
+}
