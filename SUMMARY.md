@@ -4,6 +4,7 @@
 * [Python](Python/README.md)
 * [Django](Django/README.md)
     * [常用命令](Django/常用命令.md)
+    * [测试平台搭建记录](Django/测试平台搭建记录.md)
     * [PythonWeb接口开发与测试](Django/PythonWeb接口开发与测试.md)
 * [GitBook](GitBook/README.md)
     * [安装配置](GitBook/安装配置.md)
