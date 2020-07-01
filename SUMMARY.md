@@ -19,4 +19,7 @@
     * [安装配置](Selenium/安装配置.md)
     * [常用API](Selenium/常用API.md)
     * [Issues](Selenium/Issues.md)
+* [命令行](命令行/README.md)
+    * [vim常用命令](命令行/vim常用命令.md)
+    * [Git常用命令](命令行/Git常用命令.md)
 
