@@ -22,4 +22,7 @@
 * [命令行](命令行/README.md)
     * [vim常用命令](命令行/vim常用命令.md)
     * [Git常用命令](命令行/Git常用命令.md)
+* [工具](工具/README.md)
+    * [Faker](工具/Faker.md)
+    * [Charles](工具/Charles.md)
 
