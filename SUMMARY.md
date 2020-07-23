@@ -2,6 +2,7 @@
 
 * [前言](README.md)
 * [Python](Python/README.md)
+    * [基本功底](Python/基本功底.md)
 * [Django](Django/README.md)
     * [常用命令](Django/常用命令.md)
     * [测试平台搭建记录](Django/测试平台搭建记录.md)
