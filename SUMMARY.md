@@ -26,4 +26,7 @@
 * [工具](工具/README.md)
     * [Faker](工具/Faker.md)
     * [Charles](工具/Charles.md)
+* [随笔](随笔/README.md)
+    * [奋斗](随笔/奋斗.md)
+    * [奇想](随笔/奇想.md)
 
