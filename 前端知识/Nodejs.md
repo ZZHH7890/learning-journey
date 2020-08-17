@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-08-17 10:20:41
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-08-17 10:42:02
+ * @LastEditTime: 2020-08-17 14:48:38
  * @Description: For Automation
 -->
 # 下载安装
@@ -34,21 +34,8 @@ $ npm -v
 ```
 17TRACK@17-20180416LUGI MINGW64 ~
 $ npm config list
-; cli configs
-metrics-registry = "http://registry.npm.taobao.org/"
-scope = ""
-user-agent = "npm/6.9.0 node/v10.16.3 win32 x64"
-
-; userconfig C:\Users\17TRACK\.npmrc
+userconfig C:\Users\17TRACK\.npmrc
 cache = "D:\\mysoftware\\nodejs\\node_cache"
 prefix = "D:\\mysoftware\\nodejs\\node_global"
 registry = "http://registry.npm.taobao.org/"
-
-; builtin config undefined
-
-; node bin location = D:\mysoftware\nodejs\node.exe
-; cwd = C:\Users\17TRACK
-; HOME = C:\Users\17TRACK
-; "npm config ls -l" to show all defaults.
-
 ```

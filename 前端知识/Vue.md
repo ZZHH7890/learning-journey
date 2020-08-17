@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-08-17 10:20:41
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-08-17 14:03:31
+ * @LastEditTime: 2020-08-17 19:10:10
  * @Description: For Automation
 -->
 # Vue安装配置
@@ -51,17 +51,17 @@ published 8 months ago by yyx990803 <yyx990803@gmail.com>
 ```
 cnpm install -g vue-cli
 ```
+
 ```
 $ vue -V
 2.9.6
 ```
-```
 
-```
 ```
 #这里需要进行一些配置，默认回车即可
 vue init webpack my-project
 ```
+
 ```
 cd my-project
 cnpm install
@@ -89,6 +89,11 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 ```
 
+## vue-router
+```
+https://router.vuejs.org/zh/guide/
+```
+
 # 常见问题
 ## Elements in iteration expect to have 'v-bind:key' directives
 [解决](https://www.cnblogs.com/h2zZhou/p/9639984.html)
@@ -107,4 +112,12 @@ Vue.use(VueAxios, axios)
         <td>{{testcase.project}}</td>
       </tr>
     </table>
+```
+## VSCode格式化vue代码变双引号
+在项目根目录下新建一个名为.prettierrc的文件
+```
+{
+  "semi": false,
+  "singleQuote": true
+}
 ```
