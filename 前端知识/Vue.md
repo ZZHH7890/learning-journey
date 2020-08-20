@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-08-17 10:20:41
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-08-17 19:10:10
+ * @LastEditTime: 2020-08-20 19:26:25
  * @Description: For Automation
 -->
 # Vue安装配置
@@ -47,30 +47,50 @@ published 8 months ago by yyx990803 <yyx990803@gmail.com>
 
 ```
 
-## 配置vue
+## 配置脚手架vue-cli
+安装脚手架
 ```
-cnpm install -g vue-cli
+cnpm install -g @vue/cli
 ```
 
 ```
 $ vue -V
-2.9.6
+@vue/cli 4.5.4
+
+```
+
+创建项目
+```
+vue create frontend
 ```
 
 ```
-#这里需要进行一些配置，默认回车即可
-vue init webpack my-project
+$ cd frontend
+$ npm run serve
 ```
 
+启动,  'DONE  Compiled successfully'证明demo可以使用了，浏览器输入url即可：http://localhost:8093/
 ```
-cd my-project
-cnpm install
-cnpm run dev
+npm run serve
+```
+## 配置ant-design-vue
+[官网](https://www.antdv.com/docs/vue/getting-started-cn/)
+
+安装带参数--save,记得进入项目目录进行安装，才能写进依赖, 这样在main.js中导入才不会保存
+```
+cnpm install --save ant-design-vue
+```
+main.js中导入
+```
+import Button from 'ant-design-vue/lib/button'
+import 'ant-design-vue/dist/antd.css'
+
+Vue.component(Button.name, Button)
 ```
 
 ## 配置axios
 ```
-cnpm install --save axios 
+cnpm install --g axios 
 ```
 main.js
 ```
@@ -79,7 +99,7 @@ Vue.prototype.axios = axios
 ```
 也可以使用vue-axios
 ```
-cnpm install --save axios vue-axios
+cnpm install --g axios vue-axios
 ```
 main.js
 ```
@@ -119,5 +139,23 @@ https://router.vuejs.org/zh/guide/
 {
   "semi": false,
   "singleQuote": true
+}
+```
+## vue项目运行服务报错
+
+问题
+```
+npm run dev
+npm ERR! missing script: dev
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     E:\nodejs\node_cache\_logs\2018-12-12T15_06_08_674Z-debug.lo
+```
+解决:检查package.json中的脚本,会发现已经vue-cli3.0脚手架没有了dev的启动配置了
+```
+"scripts": {
+　　"serve": "vue-cli-service serve",
+　　"build": "vue-cli-service build",
+　　"lint": "vue-cli-service lint"
 }
 ```
