@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-08-17 10:20:41
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-08-20 18:23:13
+ * @LastEditTime: 2020-08-21 17:07:31
  * @Description: For Automation
 -->
 # 下载安装
@@ -60,6 +60,7 @@ registry=https://r.npm.taobao.org
 ```
 ## 安装卸载命令
 [参考简书](https://www.jianshu.com/p/fca8274bd8cc)
+[参考简书](https://www.cnblogs.com/itlkNote/p/6830682.html)
 
 根据你所在项目文件夹package.json里面的依赖安装
 ```

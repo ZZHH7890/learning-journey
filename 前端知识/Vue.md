@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-08-17 10:20:41
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-08-20 19:26:25
+ * @LastEditTime: 2020-08-21 17:04:50
  * @Description: For Automation
 -->
 # Vue安装配置
@@ -90,7 +90,7 @@ Vue.component(Button.name, Button)
 
 ## 配置axios
 ```
-cnpm install --g axios 
+cnpm install --save axios 
 ```
 main.js
 ```
@@ -112,6 +112,31 @@ Vue.use(VueAxios, axios)
 ## vue-router
 ```
 https://router.vuejs.org/zh/guide/
+```
+```
+npm i vue-router --save
+```
+## package.json中依赖
+```
+{
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+  
+}
 ```
 
 # 常见问题
