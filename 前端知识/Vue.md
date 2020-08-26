@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2020-08-17 10:20:41
  * @LastEditors: joker.zhang
- * @LastEditTime: 2020-08-21 17:04:50
+ * @LastEditTime: 2020-08-25 10:32:58
  * @Description: For Automation
 -->
 # Vue安装配置
@@ -118,11 +118,15 @@ npm i vue-router --save
 ```
 ## package.json中依赖
 ```
-{
-  "dependencies": {
+ "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
+    "fibers": "^5.0.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
     "vue": "^2.6.11",
     "vue-router": "^3.4.3"
   },
@@ -134,9 +138,7 @@ npm i vue-router --save
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
-  }
-  
-}
+  },
 ```
 
 # 常见问题
