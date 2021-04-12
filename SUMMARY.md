@@ -35,4 +35,8 @@
 * [读书](读书/README.md)
     * [测试知识](读书/测试知识.md)
     * [到底什么样的测试最抢手](读书/到底什么样的测试最抢手.md)
+* [测试理论](测试理论/README.md)
+    * [测试理论](测试理论/测试理论.md)
+* [Linux](Linux/README.md)
+    * [Linux](Linux/Linux.md)
 
