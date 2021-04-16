@@ -39,4 +39,8 @@
     * [测试理论](测试理论/测试理论.md)
 * [Linux](Linux/README.md)
     * [Linux](Linux/Linux.md)
+* [Web测试](Web测试/README.md)
+    * [Web测试](Web测试/Web测试.md)
+* [App测试](App测试/README.md)
+    * [App测试](App测试/App测试.md)
 
