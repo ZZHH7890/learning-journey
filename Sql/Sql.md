@@ -2,7 +2,7 @@
  * @Author: joker.zhang
  * @Date: 2021-04-19 15:11:36
  * @LastEditors: joker.zhang
- * @LastEditTime: 2021-04-19 17:50:34
+ * @LastEditTime: 2021-04-26 17:47:10
  * @mail: zhanghua7890@163.com
  * @Description: For Automation
 -->
@@ -42,32 +42,25 @@ INSERT INTO [dbo].[Course]
 INSERT INTO [dbo].[SC]
            ([sid]
            ,[cid]
-           ,[Cname])
+           ,[Score])
      VALUES
            ('20131203','001','99'), ('20131203','002','92'), ('20131203','003','91'),('20131204','001','67'),('20131204','002','99'),('20131204','003','88')
 ```
 
 ## 查询课程“001“课程比”002“课程成绩高的所有学生的学号
 ```python
-select * from SC
-sid	cid	Cname
-20131201  	001       	85        
-20131201  	002       	90        
-20131201  	003       	91        
-20131202  	001       	87        
-20131202  	002       	91        
-20131202  	003       	68        
-20131203  	001       	99        
-20131203  	002       	92        
-20131203  	003       	91        
-20131204  	001       	67        
-20131204  	002       	99        
-20131204  	003       	88        
+select a.sid from [JokerTest].[dbo].[SC] a, [JokerTest].[dbo].[SC] b where a.sid =b.sid and a.cid='001'and b.cid='002'and a.score>b.score
 ```
+
+## 修改学号为 20131201 的语文成绩为 100
 ```python
-
-
+update [JokerTest].[dbo].[SC] set score='100' where sid ='20131201' and cid =(select cid from [JokerTest].[dbo].[Course] where Cname='语文' )
 ```
+## 删除学习“叶平”老师课程的 sc 表记录
+```python
+delete from [JokerTest].[dbo].[SC] where cid =(select cid from [JokerTest].[dbo].[Course] where tid=(select tid from [JokerTest].[dbo].[Teacher] where Tname ='张三' ))
+```
+
 # sql清空表数据操作
 delete----速度慢，不适合大量数据删除，但是可以进行条件删除
 ```python
