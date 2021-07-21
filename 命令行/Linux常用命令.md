@@ -1,11 +1,13 @@
 <!--
  * @Author: joker.zhang
- * @Date: 2021-04-12 15:36:46
+ * @Date: 2021-07-21 10:28:40
  * @LastEditors: joker.zhang
- * @LastEditTime: 2021-04-14 16:20:16
+ * @LastEditTime: 2021-07-21 10:29:25
  * @mail: zhanghua7890@163.com
- * @Description: For Automation
 -->
+# Linux
+不想安装Linux的同学（比较穷的同学，比如我）可以直接在线练习
+https://bellard.org/jslinux/vm.html?cpu=riscv64&url=fedora33-riscv.cfg&mem=256令
 
 # 清空文件内容
 ```python
