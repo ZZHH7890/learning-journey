@@ -4,6 +4,7 @@
 * [Python](Python/README.md)
     * [基本功底](Python/基本功底.md)
     * [爬虫](Python/爬虫.md)
+    * [FastAPI](Python/FastAPI.md)
 * [Django](Django/README.md)
     * [常用命令](Django/常用命令.md)
     * [测试平台搭建记录](Django/测试平台搭建记录.md)
