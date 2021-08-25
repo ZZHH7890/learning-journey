@@ -6,6 +6,55 @@
  * @mail: zhanghua7890@163.com
  * @Description: For Automation
 -->
+# 原理
+## selenium到底怎么工作
+(参考)[https://www.lmlphp.com/user/3173/article/item/27008/]selenium的工作主要分为3个角色
+* 我们的自动化代码，可以是python/java/c#等，对应技术上的是WebDriver API：自动化代码发送请求给浏览器的驱动，也就是对于每一条Selenium脚本，一个http请求会被创建并且发送给浏览器的驱动
+* 浏览器驱动,对应技术上chromedriver.exe/geckodriver.exe/IEDriverServer.exe：它来解析这些自动化测试的代码，解析后把它们发送给浏览器，也就是浏览器驱动中包含了一个用来接收这些http请求的HTTP Server ，它接收到请求后根据请求来具体操控对应的浏览器
+* 浏览器，对应谷歌/火狐/IE等浏览器：执行浏览器驱动发来的指令，并最终完成工程师想要的操作，也就是浏览器执行具体的测试步骤然后浏览器将步骤执行结果返回给HTTP Server，HTTP Server又将结果返回给Selenium的脚本
+
+
+## selenium工作原理详解
+(参考)[https://www.cnblogs.com/linuxchao/p/linux-selenium-webdriver.html]
+### 原理Demo
+这个demo我跟着做了，运行成功了，但是response响应返回404了，还需要时间找找原因，当然我觉得这个demo很好的展示的selenium的工作原理sessionId
+```python
+import requests
+# 请求地址(打开浏览器)
+driver_url = 'http://localhost:9515/session'
+# 打开浏览器的请求参数
+driver_value = {"capabilities":
+                    {"firstMatch": [{}],
+                     "alwaysMatch":
+                         {"browserName":
+                              "chrome",
+                          "platformName": "any",
+                          "goog:chromeOptions":
+                              {"extensions": [], "args": []}}},
+                "desiredCapabilities":
+                    {"browserName":
+                         "chrome",
+                     "version": "",
+                     "platform": "ANY",
+                     "goog:chromeOptions": {"extensions": [],
+                                            "args": []}}}
+# 发送求清
+response_session = requests.post(driver_url, json = driver_value)
+print(response_session.json())
+url = 'http://localhost:9515/session/'+response_session.json()['sessionId']+'/url'
+# 访问我的博客的请求参数
+value = {"url": "https://www.cnblogs.com/linuxchao/", "sessionId": response_session.json()['sessionId']}
+response_blog = requests.post(url = url,json = value)
+print(response_blog.json())
+```
+### 原理解释
+* selenium client(python等语言编写的自动化测试脚本)初始化一个service服务，通过Webdriver启动浏览器驱动程序chromedriver.exe
+* 通过RemoteWebDriver向浏览器驱动程序发送HTTP请求，浏览器驱动程序解析请求，打开浏览器，并获得sessionid，如果再次对浏览器操作需携带此id
+* 打开浏览器，绑定特定的端口，把启动后的浏览器作为webdriver的remote server
+* 打开浏览器后，所有的selenium的操作(访问地址，查找元素等)均通过RemoteConnection链接到remote server，然后使用execute方法调用_request方法通过urlib3向remote server发送请求
+* 浏览器通过请求的内容执行对应动作
+* 浏览器再把执行的动作结果通过浏览器驱动程序返回给测试脚本
+
 # Issues
 ## 清空输入框clear()失效问题解决
 * [参考](https://www.cnblogs.com/yoyoketang/p/11516138.html)
