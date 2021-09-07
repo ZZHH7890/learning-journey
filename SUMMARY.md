@@ -46,6 +46,10 @@
     * [接口测试](测试理论/接口测试.md)
     * [性能测试](测试理论/性能测试.md)
     * [自动化测试](测试理论/自动化测试.md)
+* [数据库](数据库/README.md)
+    * [MySQL](数据库/MySQL.md)
+    * [SQLServer](数据库/SQLServer.md)
 * [Sql](Sql/README.md)
+    * [Sql](Sql/Sql.md)
     * [Sql](Sql/Sql.md)
 
