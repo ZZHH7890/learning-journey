@@ -9,6 +9,24 @@
 不想安装Linux的同学（比较穷的同学，比如我）可以直接在线练习
 https://bellard.org/jslinux/vm.html?cpu=riscv64&url=fedora33-riscv.cfg&mem=256令
 
+# 查看CPU个数
+```python
+[root@localhost tmp]# cat /proc/cpuinfo | grep "physical id" | uniq | wc -l
+12
+```
+# 查看CPU核数
+```python
+[root@localhost tmp]# cat /proc/cpuinfo | grep "cpu cores" | uniq
+```
+# 查看CPU型号
+```python
+[root@localhost tmp]# cat /proc/cpuinfo | grep 'model name' |uniq
+```
+# 查看Linux发行版本
+```python
+[root@localhost tmp]# cat /etc/redhat-release
+```
+
 # 清空文件内容
 ```python
 [root@localhost tmp]# >zhang.log
